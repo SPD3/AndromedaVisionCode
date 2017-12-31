@@ -13,7 +13,7 @@ def main():
         cv2.waitKey(10)
         
         foundTarget, target, filTrationType = Filtration.findTarget(image)
-        print foundTarget
+        
         if foundTarget:
             angleToTurn = (RaspberryPiCameraStream.m_fieldOfViewAngle/RaspberryPiCameraStream.m_xResolution)*(target[0][0]- RaspberryPiCameraStream.m_xResolution/2)
         else:

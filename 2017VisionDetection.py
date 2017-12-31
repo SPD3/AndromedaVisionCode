@@ -903,6 +903,7 @@ def putDataOnNetworkTablesLift(networkTable, booleanFoundTarget, timestampLift,r
     networkTable.putNumber('timestampLift', timestampLift)
     networkTable.putNumber("robotTimestampLift", robotTimestampLift)
     
+
 def putDataOnNetworkTablesHighGoal(networkTable, booleanFoundTarget, timestampHighGoal,robotTimestampHighGoal,radiansToTurnHighGoal,distanceAwayHighGoal):
     networkTable.putBoolean('foundHighGoalTarget', booleanFoundTarget)
     networkTable.putNumber('radiansToTurnHighGoal', radiansToTurnHighGoal)
